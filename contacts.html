@@ -1,0 +1,167 @@
+<!-- William Kirby Dimagiba and Sofia Ariene Fe Perez -->
+                 <!-- BSIS-IA -->   
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacts - SAKAMOTO DAYS </title>
+
+	<!-- CSS part -->
+	<link rel="stylesheet" href="sakamoto.css">
+
+    <!-- logo -->
+
+     <link rel="icon" href="logo/logos.png" type="image/x-icon">
+
+
+
+	<!-- icon logo social media? -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="contactbg">
+
+    <a href="javascript:void(0);" class="icon" onclick="openSidebar()">
+        <i class="fa fa-bars"></i>
+    </a>
+					<!-- Mega Menu -->
+	<div class="main-body" style="color:#FBFFE4">
+    <div class="mega-menu" id="mymenu">
+        <img src="logo/logos.png" class="logos">
+        <a href="sakamoto.html">Home</a>
+        <a href="./blogpage.html">Blogs</a>
+        <a href="contacts.html" class="active">Contacts</a>
+        <a href="about.html">About us</a>
+
+        
+    </div>
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0);" class="closebtn" onclick="closeSidebar()">×</a>
+    <a href="sakamoto.html" >           <img src="logo/logos.png" class="logoA">
+         Home  </a>
+    <a href="./blogpage.html">Blogs</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="about.html">About us</a>
+</div>
+
+
+<h1 class="con">	WHERE ARE WE LOCATED	</h1>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440.81975850173404!2d139.8101255868256!3d35.7099832611681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2sTokyo%20Skytree!5e1!3m2!1sen!2sph!4v1742036452311!5m2!1sen!2sph" class="map"></iframe>
+
+
+
+<div class="contacts">
+    <fieldset>
+        <form id="contactF" action="/sakamoto/contact.php" method="post">
+            <div class="Ctext">
+                <div class="fill">
+                    <img src="logo/logo1.png" alt="Mobo" class="logos">
+                </div>
+                <h2 class="get">GET IN TOUCH BY FILLING THIS FORM!</h2>
+
+                <label for="lname">Full Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="(Last name, First name)" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" name="contact" placeholder="(e.g. 09875938401)" pattern="[0-9]{11}" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="(e.g. sakamotodays2025@gmail.com)" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </fieldset>
+</div>
+
+	
+
+</div>
+    <br> <Br><br> <Br><br> <Br>
+
+    
+<!-- footer here -->
+
+<footer class="footer">
+
+    <div class="footerC">
+
+        <div class="footerS">
+
+            <h2>GET IN TOUCH</h2>
+            <p>Phone: 0945 725 4629</p>
+            <p><a href="mailto:kerbiyennie.bsis1a@gmail.com"> send us an <i class="fa fa-envelope-open "></i> email</a></p> 
+
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/kirbsv2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/kirbsszzz/?igsh=MTN1ZHA5NTI3Z3QxcA%3D%3D&fbclid=IwY2xjawI7z6hleHRuA2FlbQIxMAABHU397UPR8kEJXGGToIOaWZ_hGVDXylbxsbSfC_sXLhr-nkEN5e8YN2-g1g_aem_O_qbGBV229gODFvphRmb2g#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footerS">
+            <h2 class="view">VIEW PAGES</h2>
+
+            <ul class="footer-links">
+            <li><a href="sakamoto.html">HOME</a></li>
+            <li> |</li>
+            <li><a href="about.html">ABOUT US</a></li>
+             <li> |</li>
+            <li><a href="contacts.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="footerLogo">
+            <img src="logo/logo.png" alt="SAKAMOTO DAYS!">
+        </div>
+    </div>
+    <p class="footerA">
+        All right reserved &copy;2025 BSIS-1A  <a href="mailto:kerbiyennie.bsis1a@gmail.com"> CT - WEBDEV 123</a>
+    </p>
+
+</footer>
+
+<!-- javascript -->
+
+<script>
+
+  document.getElementById("contactF").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent immediate submission
+
+    if (this.checkValidity()) {
+        alert("Thank you for your feedback!");
+        this.submit(); // ✅ Now allow the form to submit to PHP
+    } else {
+        alert("Please fill in all required fields correctly.");
+    }
+});
+
+</script>
+
+<!-- menu -->
+<script>
+    function openSidebar() {
+        // Add 'hidden' class to fade out mega menu
+        document.querySelector(".mega-menu").classList.add("hidden");
+        document.getElementById("sidebar").style.width = "250px";
+    }
+    
+    function closeSidebar() {
+        // Remove 'hidden' class to fade in mega menu
+        document.querySelector(".mega-menu").classList.remove("hidden");
+        document.getElementById("sidebar").style.width = "0";
+    }
+    
+    </script>
+
+</body>
+</html>

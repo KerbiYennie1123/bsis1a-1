@@ -1,0 +1,1570 @@
+/*<!-- William Kirby Dimagiba and Sofia Ariene Fe Perez -->*/
+/*					<!-- BSIS-IA -->	*/
+
+/*background*/
+
+
+
+	.background {
+		background-image: url(backgroundx/days.png);
+		background-attachment: fixed;
+	    background-position: center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    height: 100vh;
+
+	}
+
+/* Home page part */
+
+	.body {
+		background-color:black;
+		margin: 0;
+	    padding: 0;
+	    width: 100%;
+	    height: 100%;
+
+	}
+
+	.fade-in {
+		opacity: 0;
+		transform: translateY(30px);
+		transition: opacity 1s ease-out, transform 1s ease-out;
+	}
+	
+	.fade-in.show {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+
+/*	hero section*/
+
+	.hero {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100vh;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    text-align: center;
+	    background: rgba(0, 0, 0, 1); 
+	    z-index: 99;
+	    pointer-events: none;
+	    animation: fadeOutHero 1s ease-in-out 1s forwards;
+		}
+
+	/*logo*/
+
+	.logo {
+	  display: inline-block;
+	  animation: pulseGlow 2s infinite;
+	}
+
+	@keyframes pulseGlow {
+	 	0%, 100% {
+	    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+	    transform: scale(1);
+	  }
+	  	50% {
+	    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+	    transform: scale(1.05);
+	  }
+	}
+	.logodisplay {
+	  width: 300;
+	  padding-top: 100px;
+	  display: inline-block;
+	  animation: pulseGlow 2s infinite;
+	}
+
+	@keyframes pulseGlow {
+	  0%, 100% {
+	    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+	    transform: scale(1);
+	  }
+	  50% {
+	    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+	    transform: scale(1.05);
+	  }
+	}
+
+
+	.sakam {
+		width: 600px;
+		padding-left: 200px;
+		margin-top: -40px;
+	}
+	.hero p {
+		font-family: arial;
+		color: white;
+		font-size: 50px;
+		margin-top: -50px;
+	}
+	.sakam, .hero p {
+
+	    animation: fadeIn 0.5s ease-in-out;
+	}
+
+	@keyframes fadeIn {
+	    from {
+	        opacity: 0;
+	        transform: translateY(20px);
+	    }
+	    to {
+	        opacity: 1;
+	        transform: translateY(0);
+	    }
+	}
+
+	@keyframes fadeOutHero {
+	    to {
+	        opacity: 0;
+	        visibility: hidden;
+	    }
+
+	} /*source: https://www.w3schools.com/cssref/atrule_keyframes.php*/
+
+
+        /*end*/
+
+	.main-body {
+		z-index: 9;
+		position: absolute;
+/*		blank  kac parang d bagay pag naka stay lang ang menu, still under work...  alternative (fixed)*/
+		top: -10px;
+		left: 0px;
+		width: 100%;
+		height: 120px;
+		background-color:rgb(0, 0, 0, 0.4);
+
+
+
+	}
+		
+
+
+
+
+	/*	Main hero styling*/
+
+
+
+	.main-hero {
+		background-image: url('backgroundx/./bg1.png');
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		padding-top: 1px;
+	}
+
+	
+
+	
+
+	.hp-title {
+		color: ghostwhite;
+		font-family: Verdana;
+		text-shadow: -0px -20px darkred, 0px 20px salmon;
+        font-size: 50px;
+        font-weight: bold;  
+		margin-top: 200px;
+		padding-left: 100px;
+		padding-top: 100px;
+	}
+
+	.hp-subtitle {
+		color: white;
+		font-size: 20px;
+		padding-left: 100px;
+		font-family: 'Lobster', cursive;
+		padding-bottom: 20px;
+		text-align: justify;
+		width: 350px;
+		letter-spacing: -0.5px;
+	}
+
+	.cta {
+	    font-family: "Poppins", sans-serif; 
+	    display: inline-block;
+	    padding: 15px 40px;
+	    background: linear-gradient(135deg, red, rebeccapurple); 
+	    color: #FFF2F2;   
+	    text-decoration: none;
+	    border-radius: 50px; 
+	    margin-left: 100px;
+	    font-size: 22px;
+	    font-weight: 600;
+	    transition: all 0.3s ease-in-out; 
+	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+	}
+
+	.cta:hover {
+	    background: linear-gradient(135deg, #F8E7F6, #D88ACF);
+	    color: #2C3E50; 
+	    transform: translateY(-3px);
+	    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); 
+	}
+
+
+/*		Announcment!*/
+
+	.ep {
+		font-size: 32px;
+		color: white;
+		font-family: cursive;
+		text-shadow: 2px 2px burlywood;
+		text-align: center;
+	}
+
+
+	.announcments {
+		background-color: rgba(0, 0, 0, 0.5);
+		display:flex;
+		gap:10px;
+		width:100%;
+	}
+
+
+	.section1 img {
+		width:100%;
+		height: auto;
+	}
+
+	.section1 {
+		font-family: cursive;
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content: center;
+		color:white;
+		background-color:rgba(0, 0, 0, 0.5);
+	}
+
+
+	.col-1, .col-2 {
+		width: 45%;
+		margin:12px;
+		padding: 12px;
+	}
+
+	.ep9 {
+		border-radius: 20px;
+		width: 700px;
+
+	}
+
+	.col-1 {
+    width: 200px;
+    display: flex;
+	}
+
+	.col-2 {
+		padding-left: 500px;
+	}
+
+
+	.sd {
+    font-size: 25px;
+    text-shadow: 2px 2px red;
+    margin-bottom: 10px;
+    
+	}
+
+	.recap {
+	    padding-bottom: 5px;
+	    text-shadow: 2px 2px red;
+	    margin-top: 0
+	}
+
+	.recap1 {
+	    padding-bottom: 5px;
+	    text-align: justify;
+	 
+	}
+
+	.volumes {
+	    display: flex;
+	    font-size: 30px;
+	    font-family: fantasy;
+	    color: white;
+	    text-shadow: 2px 2px indianred, -2px -2px pink;
+	    gap: 600px;
+	    padding-top: 20px;
+	}
+
+	.v5, .v6, .v19 {
+	    position: relative;
+	}
+
+	.v5 {
+	    left: 200px;
+	}
+
+	.v6 {
+	    left: 55px;
+	}
+
+	.v19 {
+	    right: 130PX;
+	}
+
+	.volc {
+	    background: #1a1a1a;
+
+	}
+
+	.previewi {
+		background-color: rgba(0, 0, 0,0.5);
+		padding: 50px;
+		margin: 0; 
+		color: white;
+		text-shadow: 2px 2px black;
+		font-family: fantasy;
+		font-size: 30px;
+		text-align: center;
+		padding-top: 30px;
+		text-shadow: 2px 2px red, -2px -2px blue;
+	}
+
+	.preview {
+		padding-top: 100px;
+	    display: flex;
+	    justify-content: space-between;
+	    gap: 20px;
+	    padding: 20px;
+	    padding-bottom: 50px;
+	}
+
+	.preview img {
+		margin-left: 30px;
+	}
+
+	.preview1, .preview2, .preview3 {
+	    flex: 1;
+	    width: 30%;
+	    padding-top: 30%;
+	    position: relative;
+	}
+
+
+	.preview1 img, .preview2 img, .preview3 img {
+	   position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 420px;    
+	    height: 520px;
+	    border-radius: 10px;
+	    background-size: cover;
+	}
+
+	.preview {
+	    display: flex;
+	    gap: 20px;
+	    justify-content: center;
+		}
+
+	.preview div {
+	    text-align: center;
+	}
+
+	img {
+	    width: 200px;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+
+	.wishlistdesc {
+	    display: flex;
+	    gap: 80px;
+	    padding: 20px;
+	    justify-content: center;
+	    flex-wrap: wrap;
+	}
+
+	.wishlistdesc p {
+	    font-family: "Poppins", sans-serif;
+	    color: white;
+	    text-shadow: 1px 1px black;
+	    font-size: 14px;
+	    line-height: 1.6;
+	}
+
+	.wish1d, .wish2d, .wish3d {
+	    max-width: 380px;
+	    text-align: justify;
+	    background: rgba(255, 255, 255, 0.1);
+	    padding: 20px;
+	    border-radius: 8px;
+	}
+
+	.wishlist-btn {
+	    background-color: #ff4d6d;
+	    color: white;
+	    border: none;
+	    padding: 10px 15px;
+	    cursor: pointer;
+	    font-size: 14px;
+	    border-radius: 5px;
+	    transition: transform 0.2s, background 0.3s;
+	    margin-top: 10px;
+	    display: flex;
+	    align-items: center;
+	    gap: 5px;
+	}
+
+	.wishlist-btn:hover {
+	    background-color: #e63950;
+	    transform: scale(1.05);
+	}
+
+	.price {
+	    font-size: 16px;
+	    font-weight: bold;
+	    color: #ffd700;
+	    margin-left: 300px;
+	    position: relative;
+	    top: -25px;
+	    font-size: 20px;
+	}
+
+
+	.rated {
+	    font-style: italic;
+	    font-weight: bold;
+	    color: #ffcccb;
+	}
+
+	.copyright {
+	    font-size: 12px;
+	    color: gray;
+	}
+
+	 .buy {
+        background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        margin-left: 170px;
+        margin-top: -35px;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .buy i {
+        font-size: 12px;
+    }
+
+    /* hover */
+
+
+    .buy:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+
+	.preview1, .preview2, .preview3 {
+    overflow: visible; 
+	}
+
+	.preview1:hover img, .preview2:hover img, .preview3:hover img {
+	    transform: scale(1.1);
+	    transition: transform 0.3s ease-in-out;
+	}
+
+
+
+
+/*contacts part*/
+
+
+	.map {
+	border: 0;
+	margin-left: 18px;
+    width: 1485px;
+    height: 500px;
+    border-radius: 20px;
+	}
+
+	.fill img{
+		width: 500px;
+		padding-left: 100px;
+		padding-top: 20px;
+	}
+
+	fieldset { 
+		border-radius: 20px;
+
+	}
+
+	.Ctext {
+
+		color: white;
+	}
+
+	.contactbg {
+		background-image: url(backgroundx/bg2.png);
+		background-size: cover;
+		padding: 100x;
+		color: black;
+	}
+
+	.con {
+		padding-top: 120px;
+		display: flex;
+		justify-content: center;
+		font-family: cursive;
+		font-size: 30px;
+		text-shadow: 2px 2px burlywood;
+	}
+
+	
+
+	.contacts {
+   		backdrop-filter: blur(10px);
+		width: 50%;
+		margin: 0 auto;
+		padding: 25px;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+		border-radius: 20px;
+		border: 5px solid white;
+		margin-top: 60px;
+		-webkit-backdrop-filter: blur(10px);
+
+
+		
+	}
+	
+
+	.get {
+		color: white;
+		font-family: cursive;
+		text-align: center;
+		text-shadow: 2px 2px red,-2px -2px blue;
+	}
+
+	.contacts input[type="text"],
+
+	.contacts input[type="cn"],
+
+	.contacts input[type="email"],
+
+	.contacts textarea {
+
+	    width: 730px;
+	    padding: 10px;
+	    margin: 10px 0;
+	    border: 2px solid red;
+	    border-radius: 5px;
+	    box-sizing: border-box;
+	    font-size: 16px;
+	}
+
+	/*para fix ung textarea and d magulo*/
+
+	.contacts textarea {
+	    height: 100px;
+	    resize: none;
+	}
+
+	.contacts button[type="submit"] {
+
+	    background-color: orangered;
+	    color: white;
+	    border: none;
+	    padding: 5px 40px; 
+	    width: 730px;       
+	    height: 40px;        
+	    border-radius: 10px; 
+	    cursor: pointer;
+	    transition: background-color 0.3s;
+	    font-size: 20px;    
+	    font-weight: bold;
+	    text-align: center;
+
+	}
+
+	.contacts button[type="submit"]:hover {
+	    background-color: indianred;
+	    color: white;
+	    font-size: 25px;
+
+
+	}
+
+
+   
+
+/*	about part*/
+
+	.body1 {
+			background-color: black;
+			padding-top: 100px;
+
+		}
+
+	.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+	}
+
+	#search-bar {
+	    width: 300px;
+	    text-align: center;
+	    padding: 10px;
+	    font-size: 16px;
+	    border-radius: 20px;
+	    border: 2px solid #ff4d6d;
+	    outline: none;
+	    transition: all 0.3s ease-in-out;
+	}
+
+	#search-bar:focus {
+	    border-color: #ff6a89;
+	    box-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+	}
+
+	mark {
+	    background: yellow;
+	    font-weight: bold;
+	    color: black;
+	    padding: 2px 4px;
+	    border-radius: 3px;
+	}
+
+
+
+	.logoC {
+		padding-top: 50px;
+		padding-bottom: 5px;
+		justify-content: center;
+		display: flex;
+	}
+	.abouts {
+		width: 400px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.column {
+	    display: flex;
+	    gap: 20px;	    
+	    background-image: url('backgroundx/sa.png'); 
+	    background-size: cover; 
+	    border-radius: 5px;
+	    background-repeat: no-repeat;
+	    width: 100%;
+	    height: 540px;
+
+	}
+
+	.col1 {
+	    flex: 1;
+	    padding: 20px;
+	    color: white;
+	}
+
+	.syn {
+	    width: 550px;
+	    color: white;
+	    font-family: cursive;
+	    font-size: 19px;
+	    text-align: justify;
+	    text-shadow: 2px 2px black;
+
+	   
+	}
+
+	.trailer {
+		border-radius: 20px;
+	    width: 820px; 
+	    height: auto; 
+	}
+
+
+
+
+/*	main-characters*/
+
+
+
+	.mainchar {
+		color: white;
+		font-family: cursive;
+		text-align: center;
+		background-color: black;
+		padding: 50px;
+	}
+
+/*	Taro Sakamoto*/
+
+	.characters {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+	}
+
+	.taro {
+	    margin-left: 20px;
+	    background-color: #333;
+	    border-radius: 20px;
+
+	}
+
+	.taro img {
+	    width: 800px;
+	    height: 800px;
+	    border-radius: 10px;
+	    display: block;
+	    margin-left: 100px;
+
+	}
+
+	.char-description {
+	    background-color: rgba(250, 200, 223, 0.7);
+	    color: white;
+	    padding: 20px;
+	    border-radius: 8px;
+	    text-align: center;
+	    margin-top: -85px;
+	    margin-left: 3px;
+	    font-size: 14px;
+	    font-family: cursive;
+
+	}
+
+
+
+	.desc {
+		margin-right: 20px;
+		margin-top: 90px;
+		border: 3px solid black;
+	}
+
+
+	
+
+	.bio-info, .personal-desc, .appearance, .professional-status{
+	    background-color: #b31b1b;
+	    color: black;
+	    padding: 5px;
+	    text-align: center;
+
+	}
+
+	table {
+	    width: 500px;
+	    border-collapse: collapse;
+
+	}
+
+	th, td {
+	    border: 1px solid black;
+	    padding: 8px;
+	    text-align: left;
+	}
+
+
+
+	th {
+	    background-color: rgba(255, 200, 50, 0.8);
+	    font-weight: bold;
+	}
+
+	td {
+	    background-color: white;
+	}
+
+	a {
+	    color: red;
+	    text-decoration: none;
+	}
+
+	.col1 a:hover {
+		text-decoration: underline;
+	}
+
+	.col-2 a:hover {
+		text-decoration: underline;
+	}
+
+	.professional-status a:hover {
+	    text-decoration: underline;
+	}
+	
+
+
+/*	mangakakalot mwehehe*/
+
+	.aboutSD {
+		width: 1375px;
+		display: block;
+	    background-color: #ff4500; 
+	    color: white;
+	    padding: 20px 55px; 
+	    margin-left: 20px;
+	    border-radius: 5px;
+	    font-size: 20px;
+	    font-weight: bold; 
+	    text-align: justify;
+	    transition: background-color 0.3s;
+}
+
+	.aboutSD:hover {
+    	background-color: #3498db;
+}
+
+    .open {
+        background-color: #ff4500;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: -5px;
+        margin-bottom: px;
+    }
+
+    .open:hover {
+        background-color: #e03e00;
+    }
+
+    .mangga {
+    	background-image: url(backgroundx/manga.png);
+    	 background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: right;
+    	
+        }
+
+    .manga-section {
+
+        width: 600px;
+	    margin: 0px auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        display: none; 
+
+    }
+
+    .mangaon {
+    	width: 600;
+    	height: 500;
+
+    }
+
+    h2 {
+        font-family: cursive;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .mangakakalot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .close {
+        background-color: #ff0000;
+        color: white;
+        padding: 8px 15px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: block;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .close:hover {
+        background-color: #cc0000;
+    }
+
+    .past {
+    	width: 1526px;
+    	height: 100%;
+    }
+
+	/* Character Container */
+.character-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Main Container */
+.character-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Sections (Different Sizes and Layouts) */
+.sakamoto-family, .allies, .order-members, .villains {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Size Variations */
+.sakamoto-family .character-card {
+    width: 300px;  /* Bigger size for Sakamoto Family */
+    height: 400px;
+}
+
+.allies .character-card {
+    width: 200px; /* Slightly smaller than Sakamoto Family */
+    height: 300px;
+}
+
+.order-members .character-card {
+    width: 180px; /* Order members medium size */
+    height: 280px;
+}
+
+.villains .character-card {
+    width: 160px; /* Villains are the smallest */
+    height: 250px;
+}
+
+/* Character Card */
+.character-card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Default Character Images */
+.char-img, .char-img-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Image */
+.char-img-hover {
+    opacity: 0;
+}
+
+/* Full Cover Gradient Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 00%); */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Character Details */
+.character-details {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+/* Hover Effects */
+.character-card:hover .char-img {
+    opacity: ;
+}
+
+.character-card:hover .char-img-hover {
+    opacity: 1;
+}
+
+.character-card:hover .overlay {
+    opacity: 1;
+}
+
+.character-card:hover .character-details {
+    opacity: 1;
+    bottom: 20px;
+}
+
+/* Dim all characters when any character is hovered */
+.character-container:has(.character-card:hover) .character-card {
+    opacity: 0.5;
+}
+
+/* Keep only the hovered character fully visible */
+.character-card:hover {
+    opacity: 1 !important;
+}
+
+
+/* view more  */
+
+.extra-details {
+    display: none;
+    text-align: center;
+}
+
+.toggle-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
+
+
+
+/*	blogpage*/
+
+		
+	.errors {
+	    background-color: black;
+	}
+
+	.errorw {
+	    text-align: center;
+	    padding-top: 60px;
+	    font-family: monospace;
+	}
+
+
+
+	.errort {
+	    font-size: 5rem;
+	    color: white;
+	}
+
+	.errormsg {
+		margin-top: -50px;
+	    font-size: 30px;
+	    color: #333;
+	    text-align: center;
+	}
+
+	.errorb {
+	    display: inline-block;
+	    margin: 2px 0;
+	    padding: 10px 20px;
+	    font-size: 13px;
+	    color: white;
+	    background-color: red;
+	    border-radius: 5px;
+	}
+
+	.errorb:hover {
+	    background-color: darkred;
+	}
+
+	.errorimg {
+	    width: 300px;
+	    margin-left: 665px;
+	}
+
+/*	just freakin' bored asf */
+
+	.rick-rolled {
+	    margin-top: 20px;
+	    text-align: center;
+	}
+
+.rick-rolled button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rick-rolled button:hover {
+    background: #ff0000;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.8);
+}
+
+
+
+	/*	divider*/
+
+	.chibi-divider {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    width: 100%;
+	    position: relative;
+	    margin: 50px 0;
+	}
+
+	.line {
+	    flex-grow: 1;
+	    height: 2px;
+	    background: #ccc;
+	}
+
+	.bar {
+	    font-size: 50px;
+	    font-weight: bold;
+	    color: #555;
+	    margin: 0 10px;
+	}
+
+	.sakamoto-trio {
+	    display: flex;
+	    gap: 20px;
+	    padding: 0 15px;
+	}
+
+	.sakamoto-trio img {
+	    width: 80px;
+	    height: 80px;
+	    border-radius: 50%;
+	    object-fit: cover;
+	    border: 4px solid white;
+	    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.chibi-divider h1 {
+		color: white;
+		font-family: cursive;
+	}
+
+
+
+/*footer here*/
+
+		
+	.footer {
+	    background-color: #0d0d0d;
+	    color: #fff;
+	    padding: 10px 10px;
+	    text-align: justify;
+	    font-family: 'Poppins', sans-serif;
+	}
+
+
+	.footerC {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    max-width: 1200px;
+	    margin: auto;
+	    flex-wrap: wrap;
+	    padding-bottom: 20px;
+	}
+
+
+	.footerS {
+	    flex: 1;
+	    padding: 20px;
+	    min-width: 250px;
+	}
+
+	.footer-links {
+		list-style: none;
+	    padding: 0;
+	    display: flex;
+	    justify-content: center;
+	    gap: 15px;
+	}
+
+	.view {
+		padding-left: 100px;
+		text-align: center;
+	}
+	
+
+	.footerS h2 {
+		margin-left: -130px;
+		color: white;
+		font-family: fantasy;
+	    font-size: 30px;
+	    margin-bottom: 10px;
+	    font-weight: bold;
+	}
+
+	.footerS p,.footerS a {
+	    font-size: 16px;
+	    color: #bbb;
+	    text-decoration: none;
+	    transition: color 0.3s ease;
+	}
+
+	.footerS a:hover {
+	    color: #ffcc00;
+	}
+
+
+	/* Social Media Icons */
+	.social-icons {
+	    margin-top: 15px;
+	}
+
+	.social-icons a {
+	    font-size: 24px;
+	    margin: 0 10px;
+	    color: #bbb;
+	    display: inline-block;
+	    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.social-icons a:hover {
+	    color: #ffcc00;
+	    transform: scale(1.2);
+	    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+	}
+
+	.footerLogo {
+	    flex: 1;
+	    display: flex;
+	    justify-content: flex-end;
+	    padding: 20px;
+	}
+
+	.footerLogo img {
+	    width: 500px;
+	    border-radius: 10px;
+	    object-fit: cover;
+	}
+
+
+	.footerA {
+	    margin-top: 0px;
+	    font-size: 12px;
+	    color: #777;
+	    text-align: center;
+	}
+
+	.footerA a {
+	    font-weight: bold;
+	    text-decoration: none;
+	    color: #ffcc00;
+	    transition: color 0.3s ease;
+	}
+
+	.footerA a:hover {
+	    text-decoration: underline;
+	    color: #fff;
+	}
+
+
+    .footer-image {
+        justify-content: center;
+    }
+
+    .footer-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+/* Social Media Icons */
+
+	.social-icons {
+	    margin-top: 15px;
+	}
+
+	.social-icons a {
+	    font-size: 24px;
+	    margin: 0 10px;
+	    color: #bbb;
+	    display: inline-block;
+	    transition: transform 0.3s ease, color 0.3s ease;
+	}
+
+	.social-icons a:hover {
+	    transform: scale(1.3);
+	}
+
+	.social-icons a:nth-child(1):hover { color: #1877F2; }
+	.social-icons a:nth-child(2):hover { color: #1DA1F2; } 
+	.social-icons a:nth-child(3):hover { color: #E4405F; } 
+
+
+	/*cursorr*/
+
+/*source:https://www.w3schools.com/cssref/pr_class_cursor.php*/
+
+
+
+
+
+	button, a, img {
+	    cursor: url('cursor/pointer.cur'), pointer !important;
+
+	}
+	
+	::selection {
+	    background: red;
+	    color: white; 
+	}
+
+
+	.custom-text-cursor {
+	    display: inline-block;
+	    width: 2px;
+	    height: 16px;
+	    background: #00eaff;
+	    animation: neonCursor 1s infinite;
+	}
+
+
+	/*scroll*/
+
+	/*source: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
+
+	::-webkit-scrollbar {
+	    width: 10px; 
+	}
+
+	::-webkit-scrollbar-track {
+	    background: #f4f4f4;
+	    border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb {
+	    background: linear-gradient(45deg, #ff6b6b, #ffa502);
+	    border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+	    background: linear-gradient(45deg, #ff4757, #ff7f50);
+	}
+
+/*	general / public */
+
+body {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	    width: 100%;
+	    height: 100%;
+	   	cursor: url('cursor/cursor.cur'), auto;
+
+	}
+
+/*Sticky Nav*/
+
+	.mega-menu {
+	    background-color: transparent;  
+	    overflow: hidden;
+	    display: flex;
+	    align-items: center;
+	    justify-content: start;
+	    width: 100%;
+	    padding: 10px 20px;
+	    box-sizing: border-box;
+	    border-radius: 50px;
+	    position: relative;
+		transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Mega Menu Hidden (When Sidebar Opens) */
+.mega-menu.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+	/* Hamburger Icon */
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #FBFFE4;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+	z-index: 99;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+ 
+
+/* Sidebar hrefss */
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FBFFE4;
+    display: block;
+    transition: 0.3s;
+	padding-left: 90px;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logoA {
+	margin-left: -65px;
+	margin-bottom: -40px;
+	width: 50px;
+}
+
+/* Sidebar Close Button */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+	/* Logo */
+	.logos {
+	    width: 100px;
+	    height: auto;
+	    margin-right: 15px;
+	}
+
+	/*Links */
+
+	.mega-menu a {
+	    font-family: fantasy;
+	    display: inline-block;
+	    color: white;
+	    text-align: center;
+	    padding: 10px 40px;
+	    text-decoration: none;
+	    font-size: 20px;
+	    border-radius: 50px;
+	    margin: 10px;
+	    background-color: transparent; 
+	    transition: background-color 0.3s ease, color 0.3s ease;
+	    height: 5px; 
+	    line-height: 5px; 
+	    width: 100px;
+	}
+
+
+	.mega-menu a:hover {
+	    background-color: #F8E7F6;
+	    color: #A9B5DF;
+	}
+
+
+	.mega-menu a.active {
+		border-radius: 5px;
+	    background-color: #FFF2F2;
+	    color: #DD88CF;
+	    border-radius: 50px;
+	}
+
+
+
+	.mega-menu a {
+	    font-family: fantasy;
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 35px 28px;
+	    text-decoration: none;
+	    font-size: 26px;
+	}
+
+	/* Bar Icon */
+
+	.icon {
+		z-index: 99;
+		margin-top: 30px;
+		margin-right: 30px;
+		line-height: 20px;
+	    cursor: pointer;
+	    position: fixed;
+	    transform: translateY(-50%); 
+   		font-size: 26px;
+    
+	}
+
+
+
+	.icon:hover {
+	    background: none !important;
+	    color: #A9B5DF;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+        
+    
+
+        
+
+        
